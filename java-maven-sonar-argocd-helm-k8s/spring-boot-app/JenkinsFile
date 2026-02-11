@@ -24,7 +24,7 @@ pipeline {
         SONAR_URL = "http://localhost:9000"
       }
       steps {
-       withSonarQubeEnv('SonarQube') {
+       withSonarQubeEnv('sonarqube') {
     sh 'cd java-maven-sonar-argocd-helm-k8s/spring-boot-app && mvn clean verify sonar:sonar'
 
 
